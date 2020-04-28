@@ -39,7 +39,6 @@ public class Point implements Comparable<Point> {
 	@Override
 	public int compareTo(Point that) {
 		if (this.y == that.y)
-			
 			if (this.x == that.x)
 				return 0;
 			else if (this.x < that.x)
