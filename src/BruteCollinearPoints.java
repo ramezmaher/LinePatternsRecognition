@@ -68,26 +68,5 @@ public class BruteCollinearPoints {
     	if(v.compareTo(s) > 0)
     		v=s;
     	return v;
-    }
-    public static void main (String[] args) {
-    	Point[] a = new Point[12];
-    	a[0] = new Point(1,1);
-    	a[1] = new Point(1,2);
-    	a[2] = new Point(1,3);
-    	a[3] = new Point(1,4);
-    	a[4] = new Point(3,4);
-    	a[5] = new Point(4,4);
-    	a[6] = new Point(4,2);
-    	a[7] = new Point(4,1);
-    	a[8] = new Point(2,2);
-    	a[9] = new Point(3,3);
-    	a[10] = new Point(2,3);
-    	a[11] = new Point(3,2);
-    	BruteCollinearPoints b = new BruteCollinearPoints(a);
-    	LineSegment[] s = b.segments();
-    	for (LineSegment l : s)
-    		System.out.println(l.toString());
-    	System.out.println(b.numberOfSegments());
-    }
-    
+    }    
 }
