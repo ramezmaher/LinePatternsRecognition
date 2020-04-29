@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class BruteCollinearPoints {
 	private LineSegment[] ans;
@@ -9,6 +10,7 @@ public class BruteCollinearPoints {
 		int len = points.length;
 		ans = new LineSegment[len];
 		double comp;
+		Arrays.sort(points);
 		for (int i=0 ; i<len ; i++) 
 			for(int j=i+1 ; j<len ;j++) {
 				comp = points[i].slopeTo(points[j]);

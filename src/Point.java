@@ -13,6 +13,7 @@ public class Point implements Comparable<Point> {
 			if (slope1<slope2) return -1;
 			if (slope1>slope2) return 1;
 			return 0;
+			
 		}
 	}
 
@@ -67,18 +68,20 @@ public class Point implements Comparable<Point> {
 		return new OrderOfSlope();
 	}
 	
-	private static void main (String[] args) {
-		Point[] a = new Point[10];
-		a[0] = new Point(0,1);
-		a[1] = new Point(120,19);
-		a[2] = new Point(10,6);
-		a[3] = new Point(7,1);
-		a[4] = new Point(13,9);
-		a[5] = new Point(0,14);
-		a[6] = new Point(9,3);
-		a[7] = new Point(4,5);
-		a[8] = new Point(5,4);
-		a[9] = new Point(10,1);
+	public static void main (String[] args) {
+		Point[] a = new Point[12];
+		a[0] = new Point(1,1);
+    	a[1] = new Point(1,2);
+    	a[2] = new Point(1,3);
+    	a[3] = new Point(1,4);
+    	a[4] = new Point(3,4);
+    	a[5] = new Point(4,4);
+    	a[6] = new Point(4,2);
+    	a[7] = new Point(4,1);
+    	a[8] = new Point(2,2);
+    	a[9] = new Point(3,3);
+    	a[10] = new Point(2,3);
+    	a[11] = new Point(3,2);
 		java.util.Arrays.sort(a);
 		
 		for (Point p : a) {
